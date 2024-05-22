@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgb(63, 62, 60);
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    margin-inline: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+nav ul li a:hover{
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons i{
+    margin-inline: 15px;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.logo h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    background: url(image8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 44px;
+    margin-top: 80px;
+}
+
+.mainText{
+    margin-top: 73px;
+}
+.mainText h1{
+    font-size: 50px;
+}
+.mainText h1 span{
+    color: rgb(8, 256, 1);
+}
+.mainText h3{
+    font-size: 30px;
+    margin-top: 12px;
+}
+.mainText p{
+    margin-top: 22px;
+}
+.mainText button{
+    font-size: 20px;
+    width: 140px;
+    height: 36px;
+    border: 2px solid  rgb(8, 256, 8);
+    color: #fff;
+    background: transparent;
+    margin-top: 22px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.mainText button:hover{
+    background: rgb(8, 256, 1);
+}
+
+.logo span, .main span, .head span{
+    color: orangered;
+}
+
+.cards{
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto;
+}
+
+.cards .crd{
+    margin-inline: 22px;
+    background: #fff;
+    margin-top: 42px;
+    width: 320px;
+    height: 380px;
+}
+.crd:hover{
+    background: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+.crd h3{
+    margin-top: 10px;
+    margin-left: 11px;
+}
+
+.crd p{
+    padding: 10px;
+}
+
+.crd button{
+    width: 90px;
+    height: 29px;
+    background: orangered;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    margin-top: 11px;
+    margin-left: 11px;
+}
+
+.crd button:hover{
+    background: transparent;
+    border: 2px solid orangered;
+    color: #000;
+    cursor: pointer;
+}
+
+.cards .crd img{
+    width: 100%;
+    height: 200px;
+}
+
+.head{
+    text-align: center;
+    padding: 90px;
+    font-size: 28px;
+}
+
+.review{
+    width: 800px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid rgb(179, 179, 179);
+}
+
+.review .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    text-align: center;
+    background: #fff;
+}
+
+.slide img{
+    border-radius: 50%;
+    width: 25%;
+    height: 60%;
+    margin-top: 11px;
+}
+
+.slide p{
+    padding: 30px;
+}
+
+.blogCard img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blogCard{
+    width: 300px;
+    height: 360px;
+    background: rgb(179, 179, 99);
+    padding: 20px;
+    margin-inline: 22px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+
+.blogCard h3{
+    margin-top: 11px;
+}
+
+.blogCard p{
+    margin-top: 8px;
+}
+
+.blogCard a{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 11px;
+    padding: 4px;
+    border: none;
+    background: orangered;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #fff;
+    padding: 54px;
+    margin-top: 83px;
+}
+
+.text p{
+    margin-top: 11px;
+}
+
+.end{
+    border-top: 2px solid #000;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+/* ..............Scrollbaar.............. */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+   
+}
+/* ..............End - Scrollbaar.............. */
+
+.theme-toggle{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme-toggle i{
+    font: 20px;
+    margin-left: 10px;
+}
+
+.theme-toggle i.active{
+    color: orangered;
+}
+
+body.light{
+    background: #fff;
+    color: #000;
+}
+
+body.dark{
+    background: #333;
+    color: #000;
+}
+
+@media only screen and (max-width:840px) {
+    nav ul{
+        display: none;
+    }
+    #baar{
+        display: block;
+    }
+
+    .showitem{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        height: 200px;
+        margin-left: -8px;
+        gap: 22px;
+    }
+
+    .main{
+        width: 100%;
+        display: block; 
+        text-align: center;
+    }
+
+    .cards .crd{
+        width: 90%;
+        margin: auto;
+        margin-top: 22px;
+    }
+
+    .review{
+        width: 90%;
+    }
+
+    .icons{
+        margin-right: 11px;
+    }
+
+    .icons i{
+        margin-inline: 4px;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+
+    .cards .crd{
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
